@@ -20,7 +20,7 @@ docker run --rm -it --network host --ipc=host --pid=host \
   --env="DISPLAY=$DISPLAY" \
   --env="QT_X11_NO_MITSHM=1" \
   --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
-  ros2-tdmppi:latest
+  ros2-isaacsim:latest
 ```
 
 #### Attaching to A Running Container
