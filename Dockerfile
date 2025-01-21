@@ -91,10 +91,6 @@ RUN /bin/bash -c "source ~/.bashrc"
 WORKDIR /root
 RUN git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 
-# Copy over the rviz config file so we don't have to set up rviz every time
-COPY rviz-conf.rviz /root/rviz-conf.rviz
-RUN chmod 644 /root/rviz-conf.rviz
-
 # Build TurtleBot3 simulation packages
 WORKDIR /root/turtlebot3_simulations
 RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && colcon build"
