@@ -33,6 +33,9 @@ cd
 ./start_simulation.sh
 ```
 
+### Starting Octomap
+`ros2 launch octomap_server octomap_mapping.launch.xml`
+
 ### Troubleshooting
 If you face graphical errors, such as rviz2 not starting. Make sure to run `xhost +local:docker` on the host machine.
 
