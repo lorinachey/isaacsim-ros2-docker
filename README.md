@@ -46,7 +46,9 @@ If you face graphical errors, such as rviz2 not starting. Make sure to run `xhos
 
 ### XBOX360 Controller
 Run the following nodes:
+
 `ros2 run joy joy_node`
+
 `ros2 run teleop_twist_joy teleop_node --ros-args --params-file /opt/ros/humble/share/teleop_twist_joy/config/teleop_twist_joy.config.yaml`
 
 ##### Manually Setting Controller Parameters
