@@ -10,7 +10,7 @@ You can find the nav2_params.yaml file in `/opt/ros/humble/share/nav2_bringup/pa
 `docker build -t ros2-isaacsim:latest .`
 
 ### Run the Container
-You can change the `ROS_DOMAIN_ID` to match the host network. Note that in order for networking to run properly between container and host, you must NOT be running Docker in rootless mode.
+You can change the `ROS_DOMAIN_ID` to match the host network. Note that in order for networking to run properly between container and host, you must **NOT be running Docker in rootless mode**.
 
 Make sure to update the run command with the correct device input for your controller, if using one.
 
