@@ -56,6 +56,8 @@ Set enable param to the A button:
 `ros2 param set /teleop_twist_joy_node enable_button 0`
 
 To map the left stick to forward/backward (up/down) and right/left to side movement:
+
 `ros2 param set /teleop_twist_joy_node axis_angular.yaw 0`
+
 `ros2 param set /teleop_twist_joy_node axis_linear.x 1`
 
