@@ -15,13 +15,18 @@ Make sure to update the run command with the correct device input for your contr
 
 ```
 docker run --rm -it --network host --ipc=host --pid=host \
-  --device=/dev/input/js0 --privileged \
+  --device=/dev/input/js1 --privileged \
    -e ROS_DOMAIN_ID=0 \
   --env="DISPLAY=$DISPLAY" \
   --env="QT_X11_NO_MITSHM=1" \
   --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
   ros2-isaacsim:latest
 ```
+#####  ⚠️ Warning
+
+Using the `--rm` flag will automatically remove the container after it stops.  
+Ensure that any important data is persisted using volumes or bind mounts, or it will be **lost permanently**.
+
 
 #### Attaching to A Running Container
 `docker exec -it <container name> /bin/bash`
