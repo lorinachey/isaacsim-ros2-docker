@@ -2,8 +2,9 @@
 A repository for the Dockerfile and associated resources for using ROS2 with IsaacSim in a Docker container.
 
 ### Dockerfile
-The docker file currently provides the environment for running the TurtleBot3 simulation with the base controller.
-You can also modify the nav2_params.yaml file to run different controllers. You can then find the nav2_params.yaml file in `/opt/ros/humble/share/nav2_bringup/params` in the container.
+The Dockerfile sets up a ROS2 Humble environment with default parameters instantiated for IsaacSim's ROS2 bridge and the environment variables for running the TurtleBot3 simulation with the base controller.
+For the TurtleBot3 simulation (which uses the NAV2 package), you can also modify the nav2_params.yaml file to run different controllers.
+You can find the nav2_params.yaml file in `/opt/ros/humble/share/nav2_bringup/params` in the container.
 
 ### Build the Container
 `docker build -t ros2-isaacsim:latest .`
